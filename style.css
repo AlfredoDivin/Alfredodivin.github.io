@@ -1,3 +1,4 @@
-table {border: 1px solid black; background-color:lightblue;}
-th {color: black; background-color:#c7fbfc; border: 1px darkgrey;}
-td {color: grey; background-color:#c7fbfc; border: 1px darkgrey;}
+table {border: 1px solid black;}
+th {color: black; background-color: #d2f9fa; border: 1px darkgrey;}
+td {color: grey; background-color: #d2f9fa; border: 1px darkgrey;}
+h3 {color: #031b1c; font-family: verdana;}

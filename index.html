@@ -54,9 +54,12 @@
   <p> </p>
 
   <p>Enter anything:</p>
-  <input type="text" id="inputvalue"></input>
+  <input type="text" id="inputvalue">
   <button type="button" onclick="myFunction()">Click me now!</button>
   <p id="button1"></p>
-  <script> function myFunction() {document.getElementById("button1").innerHTML = "What´s that? This button does nothing!";}</script>
+  <script> 
+    const myvalue = document.getElementById("inputvalue").value;
+    function myFunction() {document.getElementById("button1").innerHTML = myvalue, "What´s that? This button does nothing!";}
+  </script>
 </body>
 </html>  

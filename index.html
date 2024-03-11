@@ -58,7 +58,7 @@
   <button type="button" onclick="myFunction()">Click me now!</button>
   <p id="button1"></p>
   <script> 
-    const myvalue = document.getElementById("inputvalue").innerHTML;
+    const myvalue = document.getElementById("inputvalue").innerHTML.value;
     function myFunction() {document.getElementById("button1").innerHTML = `${myvalue}? Whats that? This button does nothing!`;}
   </script>
 </body>

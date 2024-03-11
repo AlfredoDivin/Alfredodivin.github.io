@@ -1,0 +1,3 @@
+table, th, td {border: 1px solid black;}
+th.thcolor {color: black; background-color:powderblue;}
+td.tdcolor {color: grey; background-color:powderblue;}

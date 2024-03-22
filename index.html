@@ -60,8 +60,10 @@
       <div class="col">
         <p>Enter anything:</p>
         <input type="text" id="inputvalue">
-        <button type="button" class="btn btn-primary" onclick="myFunction()">Click me now!</button>
-        <div class="alert alert-light" role="alert" id="button1"></div>
+        <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapsed" aria-expanded="false" aria-controls="collapseExample" onclick="myFunction()">Click me now!</button>
+        <div class="collapse" id="collapsed">
+          <div class="alert alert-light" role="alert" id="button1"></div>
+        </div>
         <script> 
           function myFunction() {
             let myvalue = document.getElementById("inputvalue").value;

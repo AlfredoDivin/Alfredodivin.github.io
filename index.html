@@ -58,17 +58,17 @@
         </tr>
       </div>
     </div>
-    <p>Enter anything:</p>
-    <input type="text" id="inputvalue">
-    <button type="button" onclick="myFunction()">Click me now!</button>
-    <p id="button1"></p>
-    <script> 
-      function myFunction() {
-        let myvalue = document.getElementById("inputvalue").value;
-        console.log(myvalue);
-        document.getElementById("button1").innerHTML = `${myvalue}? Whats that? This button does nothing!`;
-      }
-    </script>
+      <p>Enter anything:</p>
+      <input type="text" id="inputvalue">
+      <button type="button" onclick="myFunction()">Click me now!</button>
+      <p id="button1"></p>
+      <script> 
+        function myFunction() {
+          let myvalue = document.getElementById("inputvalue").value;
+          console.log(myvalue);
+          document.getElementById("button1").innerHTML = `${myvalue}? Whats that? This button does nothing!`;
+        }
+      </script>
   </div>
 </body>
 </html>  

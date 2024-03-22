@@ -10,16 +10,14 @@
   
 <body>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
   <div class="container-fluid">
     <h3>Alfredo Divin</h3>
     <h5>Ingenieria Civil Industrial</h5>
     <h4>2019</h4>
     <a href="">https://alfredodivin.github.io/adivin.github.io/</a>
     <p>I´m an engineering student at Universidad de los Andes</p>  
-  </div>
-  
-  <div class="row align-items-start">
+
+    <div class="row align-items-start">
     <div class="col-xs-4">
       <table>  
         <tr>  
@@ -80,58 +78,17 @@
           <td> Native </td>
         </tr>
     </div>
+    <p>Enter anything:</p>
+    <input type="text" id="inputvalue">
+    <button type="button" onclick="myFunction()">Click me now!</button>
+    <p id="button1"></p>
+    <script> 
+      function myFunction() {
+        let myvalue = document.getElementById("inputvalue").value;
+        console.log(myvalue);
+        document.getElementById("button1").innerHTML = `${myvalue}? Whats that? This button does nothing!`;
+      }
+    </script>
   </div>
-  <table>  
-    <tr>  
-      <th> Skill </th>
-      <th> Level </th>
-    </tr>
-    <tr>  
-      <td> Python </td>
-      <td> Advanced </td>
-    </tr>
-    <tr>  
-      <td> JavaScript </td>
-      <td> Basic </td>
-    </tr>
-    <tr>  
-      <td> HTML/CSS </td>
-      <td> Basic </td>
-    </tr>
-    <tr>  
-      <td> Git </td>
-      <td> Basic </td>
-    </tr>
-    <tr>  
-      <td> Excel </td>
-      <td> Expert </td>
-    </tr>
-    <tr>  
-      <td> SQL </td>
-      <td> Advanced </td>
-    </tr>
-    <tr>  
-      <td> English </td>
-      <td> Expert </td>
-    </tr>
-    <tr>  
-      <td> Spanish </td>
-      <td> Native </td>
-    </tr>
-  </table>
-
-  <p> </p>
-
-  <p>Enter anything:</p>
-  <input type="text" id="inputvalue">
-  <button type="button" onclick="myFunction()">Click me now!</button>
-  <p id="button1"></p>
-  <script> 
-    function myFunction() {
-      let myvalue = document.getElementById("inputvalue").value;
-      console.log(myvalue);
-      document.getElementById("button1").innerHTML = `${myvalue}? Whats that? This button does nothing!`;
-    }
-  </script>
 </body>
 </html>  

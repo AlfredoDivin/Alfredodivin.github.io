@@ -18,44 +18,60 @@
     <p>I´m an engineering student at Universidad de los Andes</p>  
 
     <div class="row">
-      <div class="col order-1">
+      <div class="col">
         <table>  
-        <tr>  
-          <th> Skill </th>
-          <th> Level </th>
-        </tr>
-        <tr>  
-          <td> Python </td>
-          <td> Advanced </td>
-        </tr>
-        <tr>  
-          <td> JavaScript </td>
-          <td> Basic </td>
-        </tr>
-        <tr>  
-          <td> HTML/CSS </td>
-          <td> Basic </td>
-        </tr>
-        <tr>  
-          <td> Git </td>
-          <td> Basic </td>
-        </tr>
-        <tr>  
-          <td> Excel </td>
-          <td> Expert </td>
-        </tr>
-        <tr>  
-          <td> SQL </td>
-          <td> Advanced </td>
-        </tr>
-        <tr>  
-          <td> English </td>
-          <td> Expert </td>
-        </tr>
-        <tr>  
-          <td> Spanish </td>
-          <td> Native </td>
-        </tr>
+          <tr>  
+            <th> Skill </th>
+            <th> Level </th>
+          </tr>
+          <tr>  
+            <td> Python </td>
+            <td> Advanced </td>
+          </tr>
+          <tr>  
+            <td> JavaScript </td>
+            <td> Basic </td>
+          </tr>
+          <tr>  
+            <td> HTML/CSS </td>
+            <td> Basic </td>
+          </tr>
+          <tr>  
+            <td> Git </td>
+            <td> Basic </td>
+          </tr>
+          <tr>  
+            <td> Excel </td>
+            <td> Expert </td>
+          </tr>
+          <tr>  
+            <td> SQL </td>
+            <td> Advanced </td>
+          </tr>
+          <tr>  
+            <td> English </td>
+            <td> Expert </td>
+          </tr>
+          <tr>  
+            <td> Spanish </td>
+            <td> Native </td>
+          </tr>
+        </table>
+      </div>
+      <div class="col">
+        <p>Enter anything:</p>
+        <input type="text" id="inputvalue">
+        <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapsed" aria-expanded="false" aria-controls="collapseExample" onclick="myFunction()">Click me now!</button>
+        <div class="collapse" id="collapsed">
+          <div class="alert alert-light" role="alert" id="button1"></div>
+        </div>
+        <script> 
+          function myFunction() {
+            let myvalue = document.getElementById("inputvalue").value;
+            console.log(myvalue);
+            document.getElementById("button1").innerHTML = `${myvalue}? Whats that? This button does nothing!`;
+          }
+        </script>
       </div>
     </div>  
   </div>
